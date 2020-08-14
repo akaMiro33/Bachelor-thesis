@@ -1,0 +1,12 @@
+C:\Users\work\Desktop\AspBlogTesty\LoggerService\bin\Release\netcoreapp2.1\LoggerService.deps.json
+C:\Users\work\Desktop\AspBlogTesty\LoggerService\bin\Release\netcoreapp2.1\LoggerService.dll
+C:\Users\work\Desktop\AspBlogTesty\LoggerService\bin\Release\netcoreapp2.1\LoggerService.pdb
+C:\Users\work\Desktop\AspBlogTesty\LoggerService\bin\Release\netcoreapp2.1\Contracts.dll
+C:\Users\work\Desktop\AspBlogTesty\LoggerService\bin\Release\netcoreapp2.1\Contracts.pdb
+C:\Users\work\Desktop\AspBlogTesty\LoggerService\obj\Release\netcoreapp2.1\LoggerService.csprojAssemblyReference.cache
+C:\Users\work\Desktop\AspBlogTesty\LoggerService\obj\Release\netcoreapp2.1\LoggerService.csproj.CoreCompileInputs.cache
+C:\Users\work\Desktop\AspBlogTesty\LoggerService\obj\Release\netcoreapp2.1\LoggerService.AssemblyInfoInputs.cache
+C:\Users\work\Desktop\AspBlogTesty\LoggerService\obj\Release\netcoreapp2.1\LoggerService.AssemblyInfo.cs
+C:\Users\work\Desktop\AspBlogTesty\LoggerService\obj\Release\netcoreapp2.1\LoggerService.csproj.CopyComplete
+C:\Users\work\Desktop\AspBlogTesty\LoggerService\obj\Release\netcoreapp2.1\LoggerService.dll
+C:\Users\work\Desktop\AspBlogTesty\LoggerService\obj\Release\netcoreapp2.1\LoggerService.pdb

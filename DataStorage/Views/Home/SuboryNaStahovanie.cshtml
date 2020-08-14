@@ -1,0 +1,49 @@
+﻿@model IEnumerable<AspBlog.Models.Task>
+
+    @{
+    ViewData["Title"] = "Zoznam úloh";
+    }
+
+    <h2>Zoznam úloh</h2>
+
+   
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.NameOfTask)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DateOfInsertion)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Uuid)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NameOfTask)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateOfInsertion)
+                </td>
+               
+                <td>
+                    <a asp-action="Download"
+                       asp-route-filename="@item.Uuid">
+                        @item.Uuid
+                    </a>
+                </td>
+            </tr>
+          
+}
+        </tbody>
+    </table>
+
+
+
+  

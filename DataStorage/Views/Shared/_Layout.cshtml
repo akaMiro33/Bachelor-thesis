@@ -1,0 +1,122 @@
+﻿@using System.Security.Claims
+@using Microsoft.AspNetCore.Identity
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AspBlog</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+</head>
+<body>
+
+
+    <partial name="_CookieConsentPartial" />
+    <header>
+        @if (User.Identity.IsAuthenticated)
+
+        {
+
+            <div id="logo"><h3>Prihláseny: @User.Identity.Name</h3></div>
+
+        }
+
+
+        <nav>
+            <ul>
+                <li><a asp-controller="Home" asp-action="Index">Domov</a></li>
+                <!-- <li><a asp-controller="Articles" asp-action="Index">Články</a></li> -->
+                <!--  <li>
+        <a asp-controller="Home" asp-action="Vyhladavanie">Vyhladávanie</a>
+
+
+    </li>-->
+                <li><a asp-controller="Home" asp-action="GetApiKeys">Správa API kľúčov</a></li>
+                <li><a asp-controller="Home" asp-action="SuboryNaStahovanie">Prehľad úloh</a></li>
+                <!-- <li><a asp-controller="Home" asp-action="SemPrace">Semestrálne práce</a></li>
+    <li><a asp-controller="Home" asp-action="NahravanieSuborov">Nahravanie</a></li>
+    <li><a asp-controller="Home" asp-action="VypisApiKeys">Generovanie Klúča</a></li>-->
+                <!--  <li><a asp-controller="Home" asp-action="References">Reference</a></li> -->
+                <!--  <li><a asp-controller="Home" asp-action="Contact">Kontakt</a></li>      -->
+                @if (User.Identity.IsAuthenticated)
+                {
+
+                    <!-- <form method="post" asp-controller="Account" aspcontroller="Logout">
+            <input type="submit" value="Logout" />
+                      <li><a asp-controller="Home" asp-action="Odhlasenie" >Odhlasit</a></li>
+        </form>-->
+
+
+                    <form method="post" asp-controller="Account" asp-action="Logout">
+                        <input type="submit" value="Logout" />
+                    </form>
+
+
+                }
+                else
+                {
+
+
+                    <li><a asp-controller="Account" asp-action="Register">Registracia</a></li>
+                    <li><a asp-controller="Account" asp-action="Login">Prihlasenie</a></li>
+
+                }
+            </ul>
+        </nav>
+    </header>
+
+    <article>
+        <div id="centrovac">
+            <header>
+                <h1>@ViewData["Title"]</h1>
+            </header>
+
+            <section>
+                <div class="container body-content">
+                    @RenderBody()
+                </div>
+            </section>
+            <div class="cistic"></div>
+        </div>
+    </article>
+
+    <footer>
+        Vytvoril &copy;Miroslav Brňo pre UNIZA FRI.
+    </footer>
+
+
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

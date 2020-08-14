@@ -1,0 +1,13 @@
+﻿@model AspBlog.Models.ApiKey
+
+@{
+    ViewBag.Title = "Odstranenie API kľúča";
+}
+
+<h3>Naozaj chcete vymazať API kľúč @Model.Id?</h3>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="Id" />
+    <input type="submit" value="Odstranit" class="btn btn-default" /> |
+    <a asp-action="Index">Späť na zoznam API kľúčov</a>
+</form>

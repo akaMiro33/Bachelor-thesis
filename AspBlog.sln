@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspBlog", "AspBlog\AspBlog.csproj", "{9FDBC7C9-7022-45F9-8565-B480944012A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{C4FB5C1C-C1F5-4B52-9C18-5B1F698E7A06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerService", "LoggerService\LoggerService.csproj", "{DA17E578-A750-44A6-8843-8092BC4ADA2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9FDBC7C9-7022-45F9-8565-B480944012A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FDBC7C9-7022-45F9-8565-B480944012A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FDBC7C9-7022-45F9-8565-B480944012A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FDBC7C9-7022-45F9-8565-B480944012A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4FB5C1C-C1F5-4B52-9C18-5B1F698E7A06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4FB5C1C-C1F5-4B52-9C18-5B1F698E7A06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4FB5C1C-C1F5-4B52-9C18-5B1F698E7A06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4FB5C1C-C1F5-4B52-9C18-5B1F698E7A06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA17E578-A750-44A6-8843-8092BC4ADA2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA17E578-A750-44A6-8843-8092BC4ADA2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA17E578-A750-44A6-8843-8092BC4ADA2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA17E578-A750-44A6-8843-8092BC4ADA2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B396F06-ACAB-421F-A652-D6D985E0DD79}
+	EndGlobalSection
+EndGlobal
